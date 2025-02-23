@@ -1,0 +1,233 @@
+/* Global Reset and Box Sizing */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Base Styles */
+body {
+    font-family: 'Quicksand', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header Styles */
+.header-container {
+    position: sticky;
+    top: 0;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 1;
+}
+
+.header-list ul {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+.header-list a {
+    padding: 0.5rem 1.5rem;
+    border-radius: 999px;
+    text-decoration: none;
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: black;
+    transition: all 0.2s ease-in-out;
+}
+
+.header-list a:hover {
+    background-color: #425c77;
+    color: white;
+}
+
+/* Main Content Styles */
+.main-container {
+    padding: 2rem 4rem;
+}
+
+.content{
+    flex: 5;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 2rem;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.main-image-profile img {
+    max-width: auto;
+    height: auto;
+}
+
+.main-description-profile {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Typography */
+.main-description-profile h1 {
+    font-size: 2rem;
+    letter-spacing: 2px;
+}
+
+.main-description-profile h2 {
+    font-size: 1.5rem;
+}
+
+.main-description-profile h1,
+.main-description-profile h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.main-description-profile p {
+    text-align: justify;
+}
+
+/* Skills List */
+.skills {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.skills li {
+    padding: 0.5rem 1.5rem;
+    border-radius: 999px;
+    font-size: 1.25rem;
+    font-weight: 500;
+    transition: all 0.2s ease-in-out;
+}
+
+.skills li:hover {
+    background-color: #425c77;
+    color: white;
+}
+
+
+/* Experience */
+.experience-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+.experience-list {
+    margin: 50px 0px 30px 0px;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    gap: 0rem 8rem;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.experience-item {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Logo */
+.logo_indomaret,
+.logo_dicoding ,
+.dream_kernel,
+.logo_freelance{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 200px;
+    height: 100px;
+    object-fit: contain;
+}
+
+/* Projects */
+.project-content{
+    /* background-color: aqua; */
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+.project-list{
+    margin: 50px 0px 30px 0px;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    gap: 0rem 8rem;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.project-card {
+    flex: 1;
+    width: auto;
+    max-width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 50px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    transition: transform 0.2s ease-in-out;
+}
+
+.project-card:hover {
+    transform: scale(1.1);
+}
+
+.link-flash {
+    position: relative;
+    text-decoration: none;
+    color: black;
+  }
+  
+  .link-flash::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background-color: #000;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-out;
+  }
+  
+  .link-flash:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+  .link-flash:visited {
+    color: black;
+  }
+  
+  .link-flash:visited::after {
+    color: black;
+    transform: scaleX(1);
+  }
