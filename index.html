@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portofolio Laurensius Yuda</title>
     <link rel="stylesheet" href="style/style.css" />
-
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -14,12 +13,11 @@
     />
   </head>
   <body>
-    <!-- header -->
+    <!-- ! header -->
     <header class="header-container">
       <div class="header-name">
         <h1 style="font-size: 2.5rem">LYWN</h1>
       </div>
-
       <div class="header-list">
         <ul>
           <li><a href="#profile">Profile</a></li>
@@ -28,16 +26,14 @@
         </ul>
       </div>
     </header>
-
-    <!-- main -->
+    <!-- ! main -->
     <main class="main-container">
       <div class="content">
-        <!-- Profile -->
+        <!-- ! Profile -->
         <article class="card" id="profile">
           <div class="main-image-profile">
             <img src="assets/profile.png" alt="Profile Photo" />
           </div>
-
           <div class="main-description-profile">
             <h1>Laurensius Yuda Wicaksono Nugroho</h1>
             <ul class="skills">
@@ -66,12 +62,10 @@
             </p>
           </div>
         </article>
-
-        <!-- Experience -->
-        <article class="card" id="experience">
+        <!-- ! Experience -->
+        <article  class="card" id="experience">
           <div class="experience-content">
             <h2>Experience</h2>
-
             <div class="experience-list">
               <div class="experience-item">
                 <h3>Indomaret Group</h3>
@@ -80,23 +74,14 @@
                   alt="Logo_Indomaret"
                   class="logo_indomaret"
                 />
-                <p>IT Supervisor</p>
+                <p style="font-weight: bold;">IT Supervisor</p>
                 <p>Mobile Developer and Back-End Developer</p>
                 <p>2024 - Present</p>
-              </div>
-
-              <div class="experience-item">
-                <h3>Indomaret Group</h3>
-                <img
-                  src="assets/Logo_Indomaret.png"
-                  alt="Logo_Indomaret"
-                  class="logo_indomaret"
-                />
-                <p>MDPS IT Specialist</p>
+                <br>
+                <p style="font-weight: bold;">MDPS IT Specialist</p>
                 <p>Mobile Developer and Back-End Developer</p>
                 <p>2023 - 2024</p>
               </div>
-
               <div class="experience-item">
                 <h3>Dicoding Indonesia</h3>
                 <img
@@ -104,13 +89,10 @@
                   alt="Dicoding_Logo"
                   class="logo_dicoding"
                 />
-                <p>Apprenticeship</p>
+                <p style="font-weight: bold;" >Apprenticeship</p>
                 <p>MSIB Pengembang Multi-Platform dan Back-End</p>
                 <p>2022 - 2023</p>
               </div>
-            </div>
-
-            <div class="experience-list">
               <div class="experience-item">
                 <h3>Impian Sukses Anak Bangsa</h3>
                 <img
@@ -118,11 +100,10 @@
                   alt="Dream_Kernel"
                   class="dream_kernel"
                 />
-                <p>Internship</p>
+                <p style="font-weight: bold;">Internship</p>
                 <p>Back End Developer and IoT Developer Intern</p>
                 <p>2022 - 2022</p>
               </div>
-
               <div class="experience-item">
                 <h3>Freelance</h3>
                 <img
@@ -130,29 +111,26 @@
                   alt="Freelance"
                   class="logo_freelance"
                 />
-                <p>Freelance</p>
+                <p style="font-weight: bold;">Freelance</p>
                 <p>Mobile Developer and IoT Developer</p>
                 <p>2021 - 2023</p>
               </div>
             </div>
           </div>
         </article>
-
-        <!-- Project -->
+        <!-- ! Project -->
         <article class="card" id="projects">
           <div class="project-content">
             <h2>My Projects</h2>
-
             <div class="project-list">
-              <!-- list project -->
               <div class="project-card">
                 <h2>
                   <a
                     href="https://github.com/laurensiusyuda/DicodingMovieApp"
                     class="link-flash"
-                    target="_blank"
-                    >Dicoding Movie App</a
-                  >
+                    target="_blank">
+                    Dicoding Movie App
+                  </a>
                 </h2>
                 <p>
                   A modern-architecture TV Series application that supports
@@ -160,17 +138,83 @@
                   state management, implements SSL Pinning for security, and is
                   integrated with Firebase Analytics & Crashlytics.
                 </p>
+                <div class="project-technologies">
+                  <span class="title-tech"><strong>Technologies Used:</strong></span>
+                  <ul>
+                      <li>Flutter</li>
+                      <li>Flutter Bloc</li>
+                      <li>Flutter Google Maps</li>
+                      <li>Flutter Dio</li>
+                      <li>Firebase Crashlytics</li>
+                      <li>Firebase Analytics</li>
+                  </ul>
               </div>
-
+              </div>
               <div class="project-card">
-                <h2>Lorem Insum Dolor</h2>
-                <h3>p</h3>
+                <h2>
+                  <a href="https://github.com/laurensiusyuda/News-App" class="link-flash"
+                  target="_blank">
+                    News App
+                  </a>
+                </h2>
                 <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Excepturi doloribus placeat enim a numquam ad quasi dolore
-                  deserunt magni temporibus.
+                  A modern-architecture News Application that supports user authentication, news search, bookmarks, and detailed news articles. It uses GetX for state management, Dio for API requests, and Shared Preferences for local storage. The app also integrates Firebase Authentication for secure login and Firestore for cloud-based bookmark storage.
                 </p>
+                <div class="project-technologies">
+                  <span class="title-tech"><strong>Technologies Used:</strong></span>
+                  <ul>
+                    <li>Flutter</li>
+                    <li>Flutter Get-x</li>
+                    <li>Flutter Dio</li>
+                    <li>Firebase Authentication</li>
+                    <li>Firebase Crashlytics</li>
+                    <li>Firebase Analytics</li>
+                  </ul>
+                </div>
               </div>
+              <div class="project-card">
+                <h2>
+                  <a href="https://github.com/laurensiusyuda/News-App" class="link-flash"
+                  target="_blank">
+                  Vannamei Shrimp Water Quality Monitoring Device
+                </a>
+                </h2>
+                <p>
+                  A modern-architecture News Application that supports user authentication, news search, bookmarks, and detailed news articles. It uses GetX for state management, Dio for API requests, and Shared Preferences for local storage. The app also integrates Firebase Authentication for secure login and Firestore for cloud-based bookmark storage.
+                </p>
+                <div class="project-technologies">
+                  <span class="title-tech"><strong>Technologies Used:</strong></span>
+                  <ul>
+                    <li>Flutter</li>
+                    <li>Flutter Get-x</li>
+                    <li>Flutter Dio</li>
+                    <li>Firebase Authentication</li>
+                    <li>Firebase Crashlytics</li>
+                    <li>Firebase Analytics</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="project-card">
+                <h2>
+                  <a href="https://github.com/laurensiusyuda/News-App" class="link-flash"
+                  target="_blank">
+                  Vannamei Shrimp Water Quality Monitoring App
+                </a>
+                </h2>
+                <p>
+                  A modern-architecture News Application that supports user authentication, news search, bookmarks, and detailed news articles. It uses GetX for state management, Dio for API requests, and Shared Preferences for local storage. The app also integrates Firebase Authentication for secure login and Firestore for cloud-based bookmark storage.
+                </p>
+                <div class="project-technologies">
+                  <span class="title-tech"><strong>Technologies Used:</strong></span>
+                  <ul>
+                    <li>Flutter</li>
+                    <li>Flutter Get-x</li>
+                    <li>Flutter Dio</li>
+                    <li>Firebase Authentication</li>
+                    <li>Firebase Crashlytics</li>
+                    <li>Firebase Analytics</li>
+                  </ul>
+                </div>
             </div>
           </div>
         </article>
