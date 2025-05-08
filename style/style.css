@@ -1,11 +1,11 @@
-/* Global Reset and Box Sizing */
+/* ! Global Reset and Box Sizing */
 *, *::before, *::after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-/* Base Styles */
+/* ! Base Styles */
 body {
     font-family: 'Quicksand', sans-serif;
     min-height: 100vh;
@@ -13,7 +13,7 @@ body {
     flex-direction: column;
 }
 
-/* Header Styles */
+/* ! Header Styles */
 .header-container {
     position: sticky;
     top: 0;
@@ -47,7 +47,7 @@ body {
     color: white;
 }
 
-/* Main Content Styles */
+/* ! Main Content Styles */
 .main-container {
     padding: 2rem 4rem;
 }
@@ -78,7 +78,6 @@ body {
     flex-direction: column;
 }
 
-/* Typography */
 .main-description-profile h1 {
     font-size: 2rem;
     letter-spacing: 2px;
@@ -99,7 +98,7 @@ body {
     letter-spacing: 0.2px;
 }
 
-/* Skills List */
+/* ! Skills List */
 .skills {
     display: flex;
     justify-content: center;
@@ -122,7 +121,7 @@ body {
     cursor: pointer;
 }
 
-/* Experience */
+/* ! Experience */
 .experience-content {
     display: flex;
     flex-direction: column;
@@ -155,7 +154,7 @@ body {
     letter-spacing: 0.2px;
 }
 
-/* Logo */
+/* ! Logo */
 .logo_indomaret,
 .logo_dicoding ,
 .dream_kernel,
@@ -167,7 +166,7 @@ body {
     object-fit: contain;
 }
 
-/* Projects */
+/* ! Projects */
 .project-content{
     flex: 1;
     display: flex;
@@ -206,19 +205,18 @@ body {
 }
 
 .project-card p {
-    letter-spacing: 0.2px;
-    text-indent: 10px;
     text-align: justify;
-    line-height: 1.5;
-    word-spacing: 0%;
+    word-spacing: normal;
     hyphens: auto;
+    text-justify: inter-word;
+    flex-grow: 1;
 }
 
 .project-technologies {
     display: flex;
     align-items: center;
-    gap: 2px;
     flex-wrap: wrap;
+    align-self: flex-start;
 }
 
 .title-tech {
