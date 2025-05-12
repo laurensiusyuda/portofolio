@@ -59,14 +59,10 @@ body {
     transform: translateY(-2px);
 }
 
-/* Main Element */
-main {
-    flex: 1;
-}
-
 /* Page Layout */
 .page-container {
     display: flex;
+    flex: 1;
     padding: 2rem;
     gap: 2rem;
     max-width: 1600px;
@@ -694,24 +690,174 @@ footer {
     }
     
     .header-list ul {
-        flex-direction: column;
-        align-items: center;
+        gap: 1rem;
+        margin-top: 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
     }
     
-    .header-list li {
-        margin: 0.5rem 0;
+    .header-list a {
+        padding: 0.4rem 1rem;
+        font-size: 1rem;
     }
     
-    #profile {
-        flex-direction: column;
-        text-align: center;
+    .main-description-profile h1 {
+        font-size: 1.8rem;
+    }
+    
+    .main-description-profile h2 {
+        font-size: 1.2rem;
     }
     
     .main-description-profile p {
-        text-align: center;
+        font-size: 1rem;
+    }
+    
+    .experience-content h2,
+    .project-content h2,
+    .contact-content h2 {
+        font-size: 1.7rem;
+    }
+    
+    .main-image-profile img {
+        max-width: 200px;
+    }
+    
+    .sidebar-img {
+        width: 200px;
+        height: 200px;
+    }
+    
+    .tech-icons {
+        gap: 0.8rem;
+    }
+    
+    .tech-icon {
+        width: 60px;
+    }
+    
+    .tech-icon i {
+        font-size: 1.7rem;
+    }
+}
+
+/* Mobile portrait */
+@media (max-width: 576px) {
+    .page-container {
+        padding: 1rem;
+    }
+    
+    .header-container {
+        padding: 0.8rem;
+    }
+    
+    .header-name h1 {
+        font-size: 1.7rem;
+    }
+    
+    .header-list ul {
+        gap: 0.5rem;
+    }
+    
+    .header-list a {
+        padding: a 0.3rem 0.8rem;
+        font-size: 0.9rem;
+    }
+    
+    .main-description-profile h1 {
+        font-size: 1.5rem;
+    }
+    
+    .main-description-profile h2 {
+        font-size: 1.1rem;
     }
     
     .skills {
-        flex-wrap: wrap;
+        gap: 0.8rem;
+    }
+    
+    .skills li {
+        padding: 0.3rem 1rem;
+        font-size: 1rem;
+    }
+    
+    .card {
+        padding: 1.2rem;
+        border-radius: 10px;
+    }
+    
+    .main-image-profile img {
+        max-width: 180px;
+    }
+    
+    .sidebar-img {
+        width: 180px;
+        height: 180px;
+    }
+    
+    .experience-content h2,
+    .project-content h2,
+    .contact-content h2 {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .experience-item {
+        padding: 1.2rem;
+    }
+    
+    .company-logo {
+        width: 150px;
+        height: 80px;
+    }
+    
+    .experience-item h3 {
+        font-size: 1.3rem;
+    }
+    
+    .submit-btn {
+        padding: 0.7rem 1.5rem;
+    }
+    
+    .form-group input,
+    .form-group textarea {
+        padding: 0.7rem;
+    }
+}
+
+/* Extra small devices */
+@media (max-width: 375px) {
+    .header-name h1 {
+        font-size: 1.5rem;
+    }
+    
+    .main-image-profile img {
+        max-width: 150px;
+    }
+    
+    .main-description-profile h1 {
+        font-size: 1.3rem;
+    }
+    
+    .main-description-profile h2 {
+        font-size: 1rem;
+    }
+    
+    .skills li {
+        padding: 0.2rem 0.8rem;
+        font-size: 0.9rem;
+    }
+    
+    .project-technologies li {
+        padding: 0.2rem 0.6rem;
+        font-size: 0.8rem;
+    }
+    
+    .card {
+        padding: 1rem;
+    }
+    
+    .sidebar-section, .profile-sidebar {
+        padding: 1rem;
     }
 }
