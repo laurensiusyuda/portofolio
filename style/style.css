@@ -1,11 +1,16 @@
 /* Global Reset and Box Sizing */
-*, *::before, *::after {
+
+*,
+*::before,
+*::after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
+
 /* Base Styles */
+
 body {
     font-family: 'Quicksand', sans-serif;
     min-height: 100vh;
@@ -16,7 +21,9 @@ body {
     line-height: 1.6;
 }
 
+
 /* Header Styles */
+
 .header-container {
     position: sticky;
     top: 0;
@@ -59,7 +66,26 @@ body {
     transform: translateY(-2px);
 }
 
+.header-list a.active {
+    background-color: #425c77;
+    color: white !important;
+    transform: translate(-2px);
+}
+
+.scroll-hidden {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.8s ease;
+}
+
+.scroll-hidden.revealed {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
 /* Page Layout */
+
 .page-container {
     display: flex;
     flex: 1;
@@ -69,7 +95,9 @@ body {
     margin: 0 auto;
 }
 
+
 /* Main Content Styles */
+
 .main-container {
     flex: 3;
 }
@@ -93,7 +121,9 @@ body {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }
 
+
 /* Profile Section */
+
 #profile {
     display: flex;
     align-items: center;
@@ -141,7 +171,9 @@ body {
     line-height: 1.7;
 }
 
+
 /* Skills List */
+
 .skills {
     display: flex;
     justify-content: center;
@@ -167,7 +199,9 @@ body {
     transform: translateY(-2px);
 }
 
+
 /* Experience Section */
+
 .experience-content {
     display: flex;
     flex-direction: column;
@@ -235,7 +269,9 @@ body {
     margin: 0.5rem 0;
 }
 
+
 /* Company Logos */
+
 .company-logo {
     margin: 1rem 0;
     width: 180px;
@@ -243,7 +279,9 @@ body {
     object-fit: contain;
 }
 
+
 /* Projects Section */
+
 .project-content {
     display: flex;
     flex-direction: column;
@@ -379,7 +417,9 @@ body {
     transform-origin: bottom left;
 }
 
+
 /* Contact Section */
+
 .contact-content {
     width: 100%;
     text-align: center;
@@ -456,7 +496,9 @@ body {
     transform: translateY(-2px);
 }
 
+
 /* Sidebar Styles */
+
 .sidebar {
     flex: 1;
     min-width: 300px;
@@ -601,7 +643,9 @@ body {
     transform: translateY(-3px);
 }
 
+
 /* Footer */
+
 footer {
     background-color: #425c77;
     color: white;
@@ -614,19 +658,19 @@ footer {
     .project-card {
         width: calc(50% - 2rem);
     }
-    
     .experience-item {
         max-width: 350px;
     }
 }
 
+
 /* Medium screens (small desktop and tablets landscape) */
+
 @media (max-width: 1200px) {
     .page-container {
         flex-direction: column;
         padding: 1.5rem;
     }
-    
     .sidebar {
         max-width: 100%;
         position: static;
@@ -635,229 +679,195 @@ footer {
         justify-content: space-between;
         gap: 1.5rem;
     }
-    
-    .profile-sidebar, .sidebar-section {
+    .profile-sidebar,
+    .sidebar-section {
         flex: 1;
         min-width: 300px;
     }
-    
     #profile {
         flex-direction: column;
         text-align: center;
     }
-    
     .main-description-profile p {
         text-align: center;
     }
-    
     .skills {
         flex-wrap: wrap;
     }
 }
 
+
 /* Tablets and smaller screens */
+
 @media (max-width: 992px) {
     .header-name h1 {
         font-size: 2rem;
     }
-    
     .project-card {
         width: 100%;
     }
-    
     .experience-list {
         gap: 2rem;
     }
-    
     .experience-item {
         min-width: 200px;
     }
-    
     .content {
         gap: 2rem;
     }
-    
     .card {
         padding: 1.5rem;
     }
 }
 
+
 /* Mobile landscape and smaller tablets */
+
 @media (max-width: 768px) {
     .header-container {
         flex-direction: column;
         padding: 1rem;
     }
-    
     .header-list ul {
         gap: 1rem;
         margin-top: 1rem;
         flex-wrap: wrap;
         justify-content: center;
     }
-    
     .header-list a {
         padding: 0.4rem 1rem;
         font-size: 1rem;
     }
-    
     .main-description-profile h1 {
         font-size: 1.8rem;
     }
-    
     .main-description-profile h2 {
         font-size: 1.2rem;
     }
-    
     .main-description-profile p {
         font-size: 1rem;
     }
-    
     .experience-content h2,
     .project-content h2,
     .contact-content h2 {
         font-size: 1.7rem;
     }
-    
     .main-image-profile img {
         max-width: 200px;
     }
-    
     .sidebar-img {
         width: 200px;
         height: 200px;
     }
-    
     .tech-icons {
         gap: 0.8rem;
     }
-    
     .tech-icon {
         width: 60px;
     }
-    
     .tech-icon i {
         font-size: 1.7rem;
     }
 }
 
+
 /* Mobile portrait */
+
 @media (max-width: 576px) {
     .page-container {
         padding: 1rem;
     }
-    
     .header-container {
         padding: 0.8rem;
     }
-    
     .header-name h1 {
         font-size: 1.7rem;
     }
-    
     .header-list ul {
         gap: 0.5rem;
     }
-    
     .header-list a {
         padding: a 0.3rem 0.8rem;
         font-size: 0.9rem;
     }
-    
     .main-description-profile h1 {
         font-size: 1.5rem;
     }
-    
     .main-description-profile h2 {
         font-size: 1.1rem;
     }
-    
     .skills {
         gap: 0.8rem;
     }
-    
     .skills li {
         padding: 0.3rem 1rem;
         font-size: 1rem;
     }
-    
     .card {
         padding: 1.2rem;
         border-radius: 10px;
     }
-    
     .main-image-profile img {
         max-width: 180px;
     }
-    
     .sidebar-img {
         width: 180px;
         height: 180px;
     }
-    
     .experience-content h2,
     .project-content h2,
     .contact-content h2 {
         font-size: 1.5rem;
         margin-bottom: 1.5rem;
     }
-    
     .experience-item {
         padding: 1.2rem;
     }
-    
     .company-logo {
         width: 150px;
         height: 80px;
     }
-    
     .experience-item h3 {
         font-size: 1.3rem;
     }
-    
     .submit-btn {
         padding: 0.7rem 1.5rem;
     }
-    
     .form-group input,
     .form-group textarea {
         padding: 0.7rem;
     }
 }
 
+
 /* Extra small devices */
+
 @media (max-width: 375px) {
     .header-name h1 {
         font-size: 1.5rem;
     }
-    
     .main-image-profile img {
         max-width: 150px;
     }
-    
     .main-description-profile h1 {
         font-size: 1.3rem;
     }
-    
     .main-description-profile h2 {
         font-size: 1rem;
     }
-    
     .skills li {
         padding: 0.2rem 0.8rem;
         font-size: 0.9rem;
     }
-    
     .project-technologies li {
         padding: 0.2rem 0.6rem;
         font-size: 0.8rem;
     }
-    
     .card {
         padding: 1rem;
     }
-    
-    .sidebar-section, .profile-sidebar {
+    .sidebar-section,
+    .profile-sidebar {
         padding: 1rem;
     }
 }
